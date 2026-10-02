@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Oscura - Cinema thriller psicologico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <a class="logo" href="#">Mente<span>Oscura</span></a>
+        <ul class="listlink">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#film">Film</a></li>
+            <li><a class="link" href="#lavora">Lavora con noi</a></li>
+            <li><a class="link" href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <p class="sottotitolo">Il blog del thriller psicologico</p>
+        <h1>Mente Oscura</h1>
+        <p class="claim">Storie che non finiscono quando si accendono le luci.</p>
+    </header>
+
+    <main>
+        <section id="film" class="sezione">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="titolosezione">I film del mese</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="film">
+                            <a href="https://www.rottentomatoes.com" target="_blank">
+                                <img class="imgfilm" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&q=80" alt="Fotografia istantanea su sfondo scuro">
+                            </a>
+                            <span class="genere">Neo-noir psicologico</span>
+                            <h3>Memento</h3>
+                            <p>Leonard non riesce a creare nuovi ricordi. Tatuaggi e polaroid sono l'unica traccia per scoprire chi ha ucciso sua moglie, in un racconto che scorre al contrario.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="film">
+                            <a href="https://www.rottentomatoes.com" target="_blank">
+                                <img class="imgfilm" src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800&q=80" alt="Pioggia su un vetro di notte">
+                            </a>
+                            <span class="genere">Thriller investigativo</span>
+                            <h3>Seven</h3>
+                            <p>Due detective inseguono un assassino che punisce le sue vittime seguendo i sette peccati capitali, sotto una pioggia che non smette mai di cadere.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <article class="film">
+                            <a href="https://www.rottentomatoes.com" target="_blank">
+                                <img class="imgfilm" src="https://images.unsplash.com/photo-1601577660951-9c33bf5ad9fe?w=800&q=80" alt="Corridoio di un hotel vuoto">
+                            </a>
+                            <span class="genere">Horror psicologico</span>
+                            <h3>Shining</h3>
+                            <p>Un inverno da custode in un hotel isolato tra le montagne. Il silenzio dei corridoi dell'Overlook spinge Jack Torrance oltre il limite della ragione.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lavora" class="sezione sezionescura">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <h2 class="titolosezione">Lavora con noi</h2>
+                        <p class="introform">Scrivi di cinema e ami le storie che ti restano in testa? Lasciaci i tuoi dati, ti ricontatteremo.</p>
+
+                        <form class="form">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="nome@email.it">
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Inserisci una password">
+
+                            <button class="bottone" type="button" data-bs-toggle="modal" data-bs-target="#modalGrazie">Invia</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="modalGrazie" tabindex="-1" aria-labelledby="titoloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modale">
+                <div class="modal-body">
+                    <h3 id="titoloModal">Grazie per averci contattato</h3>
+                    <p>Leggeremo la tua candidatura e ti risponderemo il prima possibile.</p>
+                    <button class="bottone" type="button" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contatti">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 colonnafooter">
+                    <a class="logo" href="#">Mente<span>Oscura</span></a>
+                    <p>P.IVA 01234567890</p>
+                </div>
+
+                <div class="col-12 col-md-4 colonnafooter">
+                    <h4>Chi siamo</h4>
+                    <p>Blog a cura di Luis Fernández Oliva</p>
+                    <p>Via del Corso 1, 00186 Roma</p>
+                    <p>info@menteoscura.it</p>
+                </div>
+
+                <div class="col-12 col-md-4 colonnafooter">
+                    <h4>Seguici</h4>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">© 2026 Mente Oscura. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
